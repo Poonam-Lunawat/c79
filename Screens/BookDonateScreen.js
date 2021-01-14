@@ -36,18 +36,18 @@ export default class BookDonateScreen extends Component{
 
   renderItem = ( {item, i} ) =>{
     return (
-      <ListItem
-        key={i}
-        title={item.book_name}
-        subtitle={item.reason_to_request}
-        titleStyle={{ color: 'black', fontWeight: 'bold' }}
-        rightElement={
+      <ListItem 
+        key={i}    bottomDivider>
+        <ListItem.Content>
+            <ListItem.Title style= {{color: 'black',fontWeight:"bold"}}> {item.book_name}</ListItem.Title>
+            <ListItem.Subtitle style={{color : 'green'}}>{item.reason_to_request}</ListItem.Subtitle>
             <TouchableOpacity style={styles.button}>
-              <Text style={{color:'#ffff'}}>View</Text>
+                <Text style={{color :'#ffff'}}>view</Text>
+
             </TouchableOpacity>
-          }
-        bottomDivider
-      />
+        </ListItem.Content>
+     
+          </ListItem>
     )
   }
 

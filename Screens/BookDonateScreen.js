@@ -42,7 +42,7 @@ export default class BookDonateScreen extends Component{
             <ListItem.Title style= {{color: 'black',fontWeight:"bold"}}> {item.book_name}</ListItem.Title>
             <ListItem.Subtitle style={{color : 'green'}}>{item.reason_to_request}</ListItem.Subtitle>
             <TouchableOpacity style={styles.button}>
-                <Text style={{color :'#ffff'}}>view</Text>
+                <Text style={{color :'#ffff'}}>Donate</Text>
 
             </TouchableOpacity>
         </ListItem.Content>
